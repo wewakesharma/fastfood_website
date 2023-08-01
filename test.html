@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var x = parseInt(1000);
+		function rf(){
+			setTimeout("tg()",1000);
+		}
+		function tg(){
+			
+			document.getElementById("ty").innerHTML = x;
+			x = x - 1;
+			rf();
+		}
+	</script>
+</head>
+<body>
+	<h1 id="ty">Your date appears here</h1>
+	<button onclick="tg()">Click here</button>
+</body>
+</html>
